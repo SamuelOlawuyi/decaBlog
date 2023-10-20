@@ -8,21 +8,25 @@ const ErrorPage = styled.div`
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  text-align: center;
 `;
 
 const Clearance = styled.div`
   height: 64px;
 `;
 
+const BlogImg = styled.img`
+  height: 64px;
+  width: 64px;
+`
+
 function NoAuth() {
   return (
     <ErrorPage>
       <Clearance />
-      <img src={logo} alt="Blogger logo" />
+      <BlogImg src={logo} alt="Blogger logo" />
       <h1>Unauthorised</h1>
-      <Link to='/login'>
-        <p>Please Login.</p>
-      </Link>
+      <p>Please <Link to='/login'>Login</Link>.</p>
     </ErrorPage>
   );
 }

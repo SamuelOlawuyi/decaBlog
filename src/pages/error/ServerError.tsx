@@ -7,17 +7,23 @@ const ErrorPage = styled.div`
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  text-align: center;
 `;
 
 const Clearance = styled.div`
   height: 64px;
 `;
 
+const BlogImg = styled.img`
+  height: 64px;
+  width: 64px;
+`
+
 function ServerError() {
   return (
     <ErrorPage>
       <Clearance />
-      <img src={logo} alt="Blogger logo" />
+      <BlogImg src={logo} alt="Blogger logo" />
       <h1>Server is possibly down</h1>
       <p>Please try again later.</p>
     </ErrorPage>
