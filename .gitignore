@@ -21,3 +21,6 @@ dist-ssr
 *.ntvs*
 *.njsproj
 todo
+
+# Local Netlify folder
+.netlify
