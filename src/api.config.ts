@@ -1,7 +1,9 @@
 import axios from 'axios';
 
+export const apiBaseUrl = 'https://decablog-api.onrender.com';
+
 const myApi = axios.create({
-  baseURL: 'http://localhost:3000',
+  baseURL: apiBaseUrl,
   withCredentials: true,
 });
 
@@ -12,5 +14,6 @@ myApi.interceptors.request.use((config) => {
   }
   return config;
 });
+
 
 export default myApi;

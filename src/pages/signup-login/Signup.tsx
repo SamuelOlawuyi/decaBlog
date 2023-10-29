@@ -1,4 +1,4 @@
-import myApi from "../../api.config";
+import myApi, { apiBaseUrl } from "../../api.config";
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Loading from "../loading/Loading";
@@ -112,7 +112,7 @@ export default function Signup() {
         />
 
         <button className="btn green">Create Account</button>
-        <a className="google-btn" href="http://localhost:3000/auth/google">
+        <a className="google-btn" href={`${apiBaseUrl}/auth/google`}>
           <button className="btn google" type="button">
             <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" />
             <span>Google</span>
