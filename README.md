@@ -1,1 +1,1 @@
-# Demo chat blog-Project
+# Chat blog Demo Project
